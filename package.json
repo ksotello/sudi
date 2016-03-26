@@ -1,13 +1,18 @@
 {
-    "name": "sudi",
-    "version": "1.0",
-    "description": "A graphical interface to design/edit web pages",
-    "author": "ksotello",
-    "scripts: {
-        "test": ""
+  "name": "sudi",
+  "version": "1.0.0",
+  "description": "A graphical interface to design/edit web pages",
+  "author": "ksotello",
+  "scripts": {
+    "sudi:babel": "babel src --out-file compiled.js --source-maps",
+    "sudi:mocha": "sudi:babel && mocha --reporter mocha-lcov-reporter",
+    "sudi:mochaWatch": "sudi:babel && mocha --reporter mocha-lcov-reporter -w"
     },
-    "repository": {
-        "type": "git",
-	"url": "https://github.com/ksotello/sudi"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ksotello/sudi"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5"
+  }
 }
