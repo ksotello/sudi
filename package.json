@@ -1,0 +1,13 @@
+{
+    "name": "sudi",
+    "version": "1.0",
+    "description": "A graphical interface to design/edit web pages",
+    "author": "ksotello",
+    "scripts: {
+        "test": ""
+    },
+    "repository": {
+        "type": "git",
+	"url": "https://github.com/ksotello/sudi"
+    }
+}
